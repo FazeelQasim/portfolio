@@ -1,11 +1,17 @@
+:root{
+    --bccolor: black;
+    --primary: #1a1a1a;
+}
+
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: black;
 }
 
 .header {
-    background-color: #333;
+    background-color: black;
     padding: 15px;
     position: relative;
 }
@@ -68,7 +74,7 @@ body {
     left: -250px;
     height: 100%;
     width: 250px;
-    background-color: #333;
+    background-color: black;
     transition: left 0.3s ease;
     z-index: 999;
     flex-direction: column;
@@ -144,3 +150,44 @@ body {
     }
 }
 
+
+
+
+/* For Hero Section */
+
+
+
+
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    background-color: var(--primary);
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hero-text{
+    color: white;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero-images{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+/* For About Us Section */
+.about-us{
+    display: flex;
+    flex-direction: row;
+
+}
