@@ -290,3 +290,22 @@ h1 {
     color: white; 
     margin: 9px;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .icons{
+        background-color: black; 
+        width: 99%; 
+        padding: 4%; 
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-icons{
+        color: white; 
+        margin: 9px;
+    }
+}
