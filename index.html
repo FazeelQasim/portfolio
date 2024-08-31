@@ -9,11 +9,12 @@
     <script src="https://kit.fontawesome.com/9c848326b3.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/favicon.PNG" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-    
+
 </head>
 
 <body>
-    <div class="header">
+    <!-- This is Old Header -->
+    <!-- <div class="header">
         <div class="container">
             <div class="logo"><img src="images/favicon-removebg-preview.png" alt=""></div>
             <div class="hamburger">
@@ -23,16 +24,41 @@
             </div>
             <nav class="nav">
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#websitessection">Websites</a></li>
+                    <li><a href="mycv.html">My CV</a></li>
                     <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#servicessection">Services</a></li>
-                    <li><a href="#contactsection">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="overlay"></div>
+    <div class="overlay"></div> -->
+
+
+    <!-- This is New Header -->
+    <header class="styled-header">
+        <!-- <div class="logo">My Logo</div> -->
+        <div class="logo"><img src="images/favicon-removebg-preview.png" alt=""></div>
+        <nav class="nav-links">
+            <ul class="menu">
+                <li><a href="mycv.html">My CV</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a> -->
+        </nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
 
 
     <!-- Hero Section -->
@@ -62,15 +88,15 @@
     </div>
 
 
-    <!-- Divider -->
-    <div class="stylish-divider">
+    <!-- Divider About Us-->
+    <div class="stylish-divider" id="about-us">
         <div class="divider-decor left-decor"></div>
         <i class="fa-solid fa-users">About Us</i>
         <div class="divider-decor right-decor"></div>
     </div>
 
     <!-- About Us Section -->
-    <div class="about-us" id="about-us">
+    <div class="about-us">
         <div class="about-us-image">
             <img src="images/portfolio.png" alt="About Us">
         </div>
@@ -88,45 +114,83 @@
             out and look elegant on your webpage.</p>
     </div>
 
-    <!-- About Us Section -->
-    <!-- <div>
+    <!-- Divider Portfolio-->
+    <div class="stylish-divider"  id="portfolio">
+        <div class="divider-decor left-decor"></div>
+        <i class="fa-solid fa-globe">Portfolio</i>
+        <div class="divider-decor right-decor"></div>
+    </div>
 
 
-        <div style="background-color: #000; width: 80vw; margin: auto;">
-            <div class="about-us" id="about-us">
-                <div class="skew">
-                    <div class="about-us-inner">
-                        <h1 class="about-us-heading">
-                            <a href="/">About Us</a>
-                        </h1>
-                    </div>
-                </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio">
+        <div class="website">
+            <div class="web-img">
+               <img src="images/holaplay.PNG" alt="Holaplay">
             </div>
+            <div class="diagonal-text-box" style="margin: 0; width: 300px;">
+                <h2>Holaplay</h2>
+                <p>This box has a unique diagonal cut and shadow effect, making it stand out on your webpage.</p>
+              </div>
+        </div> 
+        <div class="website">
+            <div class="web-img">
+               <img src="images/gohawkplay.PNG" alt="Gohawkplay">
+            </div>
+            <div class="diagonal-text-box" style="margin: 0; width: 300px;">
+                <h2>Gohawkplay</h2>
+                <p>This box has a unique diagonal cut and shadow effect, making it stand out on your webpage.</p>
+              </div>
+        </div> 
+        <div class="website">
+            <div class="web-img">
+               <img src="images/747live7.PNG" alt="747live7">
+            </div>
+            <div class="diagonal-text-box" style="margin: 0; width: 300px;">
+                <h2>747live7</h2>
+                <p>This box has a unique diagonal cut and shadow effect, making it stand out on your webpage.</p>
+              </div>
+        </div> 
+        <div class="website">
+            <div class="web-img">
+               <img src="images/pickgoods.PNG" alt="Pickgoods">
+            </div>
+            <div class="diagonal-text-box" style="margin: 0; width: 300px;">
+                <h2>Pickgoods</h2>
+                <p>This box has a unique diagonal cut and shadow effect, making it stand out on your webpage.</p>
+              </div>
+        </div> 
+    </div>
 
 
-            <div class="container">
 
-                <div class="main">
-                    <div class="main-container">
-                        <div class="about-us-text">
-                            <h1>Content</h1>
-                            <p>Oh God, my uncle. How am I ever gonna explain this? What?! In my experience, there is no
-                                such
-                                thing as luck. Kid, I've flown from one side of this galaxy to the other. I've seen a
-                                lot of
-                                strange stuff, but I've never seen anything to make me believe there's one all-powerful
-                                Force controlling everything. </p>
-                        </div>
-                    </div>
-                </div>
+
+
+    <!-- Divider Skills-->
+    <div class="stylish-divider"  id="skills">
+        <div class="divider-decor left-decor"></div>
+        <i class="fa-solid fa-screwdriver-wrench">Skills</i>
+        <div class="divider-decor right-decor"></div>
+    </div>
+
+
+
+
+    <!-- Skills Section -->
+     <div class="skills">
+        <div class="skills-heading">
+            <h4 class="heading-text" style="width: 90%; background-image: linear-gradient(40deg, black 60%, #1a1a1a 50%); padding: 1% 5%; padding-left: ;">Front-end</h4>
+        </div>
+        <div class="skills-box">
+            <div>
+
+            </div>
+            <div>
 
             </div>
         </div>
-    </div> -->
-
-
-
-
+     </div>
 
 
 

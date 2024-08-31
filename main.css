@@ -30,7 +30,7 @@ h1 {
 .heading {
     position: relative;
     text-align: center;
-    font-size: 50px;
+    font-size: 2em;
     font-family: 'Poppins', sans-serif;
     text-shadow:
         0 0 5px #fff352,
@@ -38,6 +38,17 @@ h1 {
         0 0 20px #fff352,
         0 0 40px #fff352,
         0 0 80px #fff352;
+}
+.heading-text {
+    text-align: start;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-shadow:
+        0 0 5px #0bf4f3,
+        0 0 10px #0bf4f3,
+        0 0 20px #0bf4f3,
+        0 0 40px #0bf4f3,
+        0 0 80px #0bf4f3;
 }
 
 .neon-btn {
@@ -237,9 +248,200 @@ h1 {
 
 
 
+/* For New Header */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+.styled-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #1f1c2c, #928dab);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.4s ease, padding 0.4s ease;
+    z-index: 1000;
+}
+
+.styled-header.scrolled {
+    background: linear-gradient(90deg, #1e1e2f, #23252d);
+    padding: 10px 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.styled-header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff352;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.styled-header .nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.styled-header .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 10px;
+    transition: color 0.4s ease;
+}
+
+.styled-header .nav-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff352;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+.styled-header .nav-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.styled-header .nav-links a:hover {
+    color: #fff352;
+}
+
+/* Stylish Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .styled-header .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #23252d;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        transition: all 0.4s ease;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .styled-header .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Stylish Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    /* Adjusted width for better visibility */
+    height: 24px;
+    /* Adjusted height for better visibility */
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    /* Adjusted for better alignment */
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+    /* Middle bar disappears when toggled */
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    /* Adjusted for better alignment */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .styled-header .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: #23252d;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        transition: all 0.4s ease;
+    }
+
+    .styled-header .nav-links.active {
+        display: flex;
+    }
+}
+
+
 
 /* For Hero Section */
 .hero {
+    margin-bottom: 150px;
+    position: relative;
+    top: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -277,6 +479,9 @@ h1 {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
+        position: relative;
+        top: 300px;
+        margin-bottom: 220px;
         flex-direction: column;
         text-align: center;
         padding: 10px;
@@ -504,4 +709,73 @@ h1 {
     font-size: 16px;
     color: #fff;
     line-height: 1.6;
+}
+
+
+
+/* For Portfolio Section */
+.diagonal-text-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e2f;
+    color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.diagonal-text-box::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff7e5f 25%, #feb47b 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0% 100%);
+    z-index: 0;
+    opacity: 0.9;
+}
+
+.diagonal-text-box h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.diagonal-text-box p {
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+.portfolio{
+    width: auto; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+.website{
+    display: flex;
+    width: 600px; 
+    margin: 30px auto; 
+    gap: -10px; 
+    border: 1px solid #fff352;
+    border-radius: 5px;
+}
+.web-img img{
+    height: 250px; 
+    width: 300px; 
+    margin-bottom: -8px; 
+    border: 1px solid #000; 
+    border-radius: 10px 0 0 10px;
 }
