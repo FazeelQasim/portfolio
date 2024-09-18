@@ -6,46 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Fazeel Qasim</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d'>
+    <link href='https://fonts.googleapis.com/css?family=Protest Guerrilla' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9c848326b3.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
-
 </head>
 
 <body>
-    <!-- This is Old Header -->
-    <!-- <div class="header">
-        <div class="container">
-            <div class="logo"><img src="images/favicon-removebg-preview.png" alt=""></div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="mycv.html">My CV</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="overlay"></div> -->
-
 
     <!-- This is New Header -->
     <header class="styled-header">
         <div class="logo"><a href="index.html"><img src="images/logosmall.png" alt=""></a></div>
         <nav class="nav-links">
             <ul class="menu">
-                <li><a href="mycv.html">My CV</a></li>
-                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="menu-toggle">
@@ -56,36 +34,56 @@
     </header>
 
 
+
+
+
+
+
     <!-- Hero Section -->
     <div class="hero">
-        <div class="hero-text">
-            <h1>Portfolio | Fazeel Qasim</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptas consequuntur ipsa
-                repellat quidem similique enim ad! Ex consequatur quisquam id, culpa aliquid earum quos? Iusto,
-                voluptas
-                dolorem! Modi.</p>
+        <div class="hero-main">
+            <div class="hero-text">
+                <h1 class="heading">Fazeel Qasim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptas consequuntur ipsa
+                    repellat quidem similique enim ad! Ex consequatur quisquam id, culpa aliquid earum quos? Iusto,
+                    voluptas
+                    dolorem! Modi.</p>
+                <a href="" download="fazeelqasim-cv.pdf">
+                    <button class="custom-btn neon-btn">Resume
+                        <i class="fa-solid fa-download fa-2x" style="vertical-align: middle;"></i>
+                    </button>
+                </a>
+            </div>
+            <div class="main-hologram"
+                style="display: flex; align-items: center; justify-content: center; width: 80vw; height: 70vh; max-width: 600px;">
 
-            <a href="" download="fazeelqasim-cv.pdf">
-                <button class="custom-btn neon-btn">Resume
-                    <i class="fa-solid fa-download fa-2x" style="vertical-align: middle;"></i>
-                </button>
-            </a>
-        </div>
-        <div class="hero-images">
-            <img src="images/hero-image.png" alt="Portfolio" style="height: 650px; width: 850px;">
+                <div class="hero-cube">
+                    <div class="ar-vr-container">
+                        <div class="ar-vr-cube">
+                            <div class="hologram">
+                                <div class="typewriter font-effect-3d-float" style="color: white;">
+                                    <span id="text">I am</span>
+                                </div>
+                            </div>
+                            <div class="cube-face front cube-color">WordPress</div>
+                            <div class="cube-face back cube-color">Html</div>
+                            <div class="cube-face left cube-color">CSS</div>
+                            <div class="cube-face right cube-color">JavaScript</div>
+                            <div class="cube-face top cube-color">Bootstrap</div>
+                            <div class="cube-face bottom cube-color">PHP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="icons">
-        <i class="fa-brands fa-square-facebook fa-3x social-icons"></i>
-        <i class="fa-brands fa-square-instagram fa-3x social-icons"></i>
-        <i class="fa-brands fa-linkedin fa-3x social-icons"></i>
-        <i class="fa-brands fa-square-github fa-3x social-icons"></i>
-    </div>
+
+
 
 
 
     <!-- Divider About Us-->
-    <div class="stylish-divider" id="about-us">
+    <div class="stylish-divider" id="about">
         <div class="divider-decor left-decor"></div>
         <i class="fa-solid fa-users">About Us</i>
         <div class="divider-decor right-decor"></div>
@@ -114,6 +112,59 @@
                     deleniti?
                 </p>
             </div>
+
+            <!-- Flip Card section of About Us-->
+            <div style="display: flex; flex-wrap: wrap; width: 100%;">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Front Side</h2>
+                            <p>Some engaging content for the front side of the card.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Back Side</h2>
+                            <p>Additional information that appears on the back side when the card is flipped.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Front Side</h2>
+                            <p>Some engaging content for the front side of the card.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Back Side</h2>
+                            <p>Additional information that appears on the back side when the card is flipped.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Front Side</h2>
+                            <p>Some engaging content for the front side of the card.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Back Side</h2>
+                            <p>Additional information that appears on the back side when the card is flipped.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h2>Front Side</h2>
+                            <p>Some engaging content for the front side of the card.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Back Side</h2>
+                            <p>Additional information that appears on the back side when the card is flipped.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -121,78 +172,6 @@
 
 
 
-
-
-    <!-- About Us Section -->
-    <!-- <div class="about-us">
-        <div class="about-us-image">
-            <img src="images/portfolio.png" alt="About Us">
-        </div>
-        <div class="about-us-box">
-            <h2 class="heading">Title of the Box</h2>
-            <p>This is a 3D stylish text box where you can place your content. It has depth, shadows, and a modern look
-                to
-                make your text stand out beautifully.</p>
-        </div>
-    </div> -->
-
-    <!-- <div class="stylish-text-box">
-        <h2>Title of the Box</h2>
-        <p>Your content goes here. This is where you can place any text you want within the box. It's designed to stand
-            out and look elegant on your webpage.</p>
-    </div> -->
-
-    <!-- Flip Card section of About Us-->
-    <!-- <div style="display: flex; flex-wrap: wrap; width: 100%;">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Front Side</h2>
-                    <p>Some engaging content for the front side of the card.</p>
-                </div>
-                <div class="flip-card-back">
-                    <h2>Back Side</h2>
-                    <p>Additional information that appears on the back side when the card is flipped.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Front Side</h2>
-                    <p>Some engaging content for the front side of the card.</p>
-                </div>
-                <div class="flip-card-back">
-                    <h2>Back Side</h2>
-                    <p>Additional information that appears on the back side when the card is flipped.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Front Side</h2>
-                    <p>Some engaging content for the front side of the card.</p>
-                </div>
-                <div class="flip-card-back">
-                    <h2>Back Side</h2>
-                    <p>Additional information that appears on the back side when the card is flipped.</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Front Side</h2>
-                    <p>Some engaging content for the front side of the card.</p>
-                </div>
-                <div class="flip-card-back">
-                    <h2>Back Side</h2>
-                    <p>Additional information that appears on the back side when the card is flipped.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Divider Portfolio-->
     <div class="stylish-divider" id="portfolio">
@@ -206,7 +185,27 @@
     <!-- Portfolio Section -->
 
     <div class="portfolio">
-        <div class="portfolio-main">
+        <div class="portfolio-main" style="background-image: url(images/darkbackground.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+            <div class="website">
+                <div class="site-images">
+                    <img src="images/holaplay.PNG" alt="">
+                </div>
+                <a href="">
+                    <h3>Site Name</h3>
+                </a>
+                <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                <p class="price">Project Price: &nbsp;10k Pkr</p>
+            </div>
+            <div class="website">
+                <div class="site-images">
+                    <img src="images/holaplay.PNG" alt="">
+                </div>
+                <a href="">
+                    <h3>Site Name</h3>
+                </a>
+                <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                <p class="price">Project Price: &nbsp;10k Pkr</p>
+            </div>
             <div class="website">
                 <div class="site-images">
                     <img src="images/holaplay.PNG" alt="">
@@ -304,13 +303,7 @@
     </div>
     <!-- Other Skills Section -->
     <!-- Modal Section -->
-    <!-- Trigger the Modal -->
-    <div class="modal-img">
-        <img class="myImages" src="images/gohawkplay.PNG" alt="Project 1">
-        <img class="myImages" src="images/portfolio.png" alt="Project 2">
-        <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
-        <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
-    </div>
+
 
     <!-- The Modal -->
     <div id="myModal" class="modal">
@@ -321,52 +314,60 @@
         <!-- Modal Caption (Image Text) -->
         <div id="caption"></div>
     </div>
+    </div>
 
 
 
 
+    <!-- Graphic Designing Section of Other Skills Section -->
 
-
-
-    <!-- Skills Section -->
     <div class="skills-section">
         <div class="services">
             <div class="skills-heading">
-                <h4 class="heading-text">Front-end</h4>
+                <h4 class="heading-text">Graphic Designing</h4>
             </div>
-            <div class="services-main">
-                <div class="skills-box">
-                    <h4 class="heading"> Front-end Developer</h4>
-                    <p style="color: white;">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Labore iste doloribus odio, velit quam
-                        officiis exercitationem
-                        nostrum
-                        nulla ipsum veniam ipsa cumque aliquid necessitatibus ut aperiam
-                        inventore vero voluptatem
-                        minus.
-                    </p>
+            <div style="background-color: black; margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
+                <!-- Trigger the Modal -->
+                <div class="modal-img" style="color: white;">
+                    <img class="myImages" src="images/gohawkplay.PNG" alt="Project 1">
+                    <img class="myImages" src="images/portfolio.png" alt="Project 2">
+                    <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
+                    <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
                 </div>
             </div>
         </div>
-        <div class="services">
-            <div class="skills-heading">
-                <h4 class="heading-text">WordPress</h4>
-            </div>
-            <div class="services-main">
-                <div class="skills-box">
-                    <h4 class="heading"> WordPress Developer</h4>
-                    <p style="color: white;">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Labore iste doloribus odio, velit quam
-                        officiis exercitationem
-                        nostrum
-                        nulla ipsum veniam ipsa cumque aliquid necessitatibus ut aperiam
-                        inventore vero voluptatem
-                        minus.
-                    </p>
+
+        <!-- Content Writing Section of Other Skills Section -->
+
+        <div class="skills-section">
+            <div class="services">
+                <div class="skills-heading">
+                    <h4 class="heading-text">Content Writing</h4>
+                </div>
+                <div class="article-gallery">
+                    <div class="article" onclick="openLightbox(0)">
+                        <h3>Article Title 1</h3>
+                        <p>Click to read...</p>
+                    </div>
+                    <div class="article" onclick="openLightbox(1)">
+                        <h3>Article Title 2</h3>
+                        <p>Click to read...</p>
+                    </div>
+                    <div class="article" onclick="openLightbox(2)">
+                        <h3>Article Title 3</h3>
+                        <p>Click to read...</p>
+                    </div>
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="lightbox">
+                    <div class="lightbox-content">
+                        <span class="close" onclick="closeLightbox()">&times;</span>
+                        <div class="lightbox-article" id="lightbox-article"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
@@ -374,118 +375,147 @@
 
 
 
-    <!-- Divider Contact Us-->
-    <div class="stylish-divider" id="contact">
-        <div class="divider-decor left-decor"></div>
-        <i class="fa-solid fa-users">Contact</i>
-        <div class="divider-decor right-decor"></div>
-    </div>
+        <!-- Divider Contact Us-->
+        <div class="stylish-divider" id="contact">
+            <div class="divider-decor left-decor"></div>
+            <i class="fa-solid fa-users">Contact</i>
+            <div class="divider-decor right-decor"></div>
+        </div>
 
-    <!-- Contact Us Section -->
+        <!-- Contact Us Section -->
 
-    <div class="contact">
-        <div class="contact-main">
-            <div class="contact-info" style="display: flex; margin: 40px;">
-                <ul>
-                    <li class="icons"><a href=""><i class="fa-solid fa-envelope fa-2x"></i>fazeelqasim2112@gmail.com</a>
-                    </li>
-                    <li class="icons"><a href=""><i class="fa-solid fa-phone fa-2x"></i>923495480991</a></li>
-                    <li class="icons"><a href=""><i class="fa-solid fa-location-dot fa-2x"></i>District Attock,
-                            Tehsil
-                            Jand P/O Makhad</a></li>
-                </ul>
+        <!-- <div class="contact">
+            <div class="contact-main">
+                <div class="contact-info" style="display: flex; margin: 40px;">
+                    <ul>
+                        <li class="icons"><a href=""><i
+                                    class="fa-solid fa-envelope fa-2x"></i>fazeelqasim2112@gmail.com</a>
+                        </li>
+                        <li class="icons"><a href=""><i class="fa-solid fa-phone fa-2x"></i>923495480991</a>
+                        </li>
+                        <li class="icons"><a href=""><i class="fa-solid fa-location-dot fa-2x"></i>District
+                                Attock,
+                                Tehsil
+                                Jand P/O Makhad</a></li>
+                    </ul>
+                </div>
+                <div class="contact-icons">
+                    <ul class="icons pd">
+                        <li><a href=""><i class="fa-brands fa-square-facebook fa-3x social-icons"></i>Facebook</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-linkedin fa-3x social-icons"></i>LinkedIn</a>
+                        </li>
+                    </ul>
+                    <ul class="icons pd">
+                        <li><a href=""><i class="fa-brands fa-square-instagram fa-3x social-icons"></i>Instagram</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-square-whatsapp fa-3x social-icons"></i>Whatsapp</a>
+                        </li>
+                    </ul>
+                    <ul class="icons pd">
+                        <li><a href=""><i class="fa-brands fa-square-youtube fa-3x social-icons"></i>YouTube</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-square-youtube fa-3x social-icons"></i>Fiverr</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="contact-icons">
-                <ul class="icons pd">
-                    <li><a href=""><i class="fa-brands fa-square-facebook fa-3x social-icons"></i>Facebook</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-linkedin fa-3x social-icons"></i>LinkedIn</a>
-                    </li>
-                </ul>
-                <ul class="icons pd">
-                    <li><a href=""><i class="fa-brands fa-square-instagram fa-3x social-icons"></i>Instagram</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-square-whatsapp fa-3x social-icons"></i>Whatsapp</a>
-                    </li>
-                </ul>
-                <ul class="icons pd">
-                    <li><a href=""><i class="fa-brands fa-square-youtube fa-3x social-icons"></i>YouTube</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-square-youtube fa-3x social-icons"></i>Fiverr</a>
-                    </li>
-                </ul>
+        </div> -->
+
+
+
+        <!-- Contact New Section -->
+        <div class="new-contact">
+            <div class="new-contact-main">
+
+                <h3 style="color: white; font-size: 3em; margin-bottom: 50px; font-weight: bolder;" class="heading">
+                    Follow</h3>
+                <div class="new-contact-icons">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x"></i>&nbsp;Facebook</a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x"></i>&nbsp;Instagram</a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-2x"></i>&nbsp;LinkedIn</a>
+                    <a href=""><i class="fa-brands fa-youtube fa-2x"></i>&nbsp;Youtube</a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2x"></i>&nbsp;Whatsapp</a>
+                    <a href=""><i class="fa-brands fa-dribbble fa-2x"></i>&nbsp;Dribble</a>
+                </div>
+                <h3 style="color: white; font-size: 3em; margin: 100px 0 50px 0; font-weight: bolder;" class="heading">
+                    Contact</h3>
+                <div class="new-contact-info new-contact-icons">
+                    <a href=""><i class="fa-solid fa-envelope fa-2x"></i>&nbsp;fazeelqasim2112@gmail.com</a>
+                    <a href=""><i class="fa-solid fa-phone fa-2x"></i>&nbsp;923495480991</a>
+                    <a href=""><i class="fa-solid fa-location-dot fa-2x"></i>&nbsp;District Attock, Tehsil Jand P/O
+                        Makhad</a>
+                </div>
             </div>
         </div>
-    </div>
 
 
 
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-main">
-            <!-- Website Links -->
-            <div>
-                <ul>
-                    <h3>Pages</h3>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#skills">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-main">
+                <!-- Website Links -->
+                <div>
+                    <ul>
+                        <h3>Pages</h3>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Best Projects -->
+                <div>
+                    <ul>
+                        <h3>Top Projects</h3>
+                        <li><a href="holaplays.com.ph">holaplays.com.ph</a></li>
+                        <li><a href="gohawkplay.com.ph">gohawkplay.com.ph</a></li>
+                        <li><a href="747live7.com.ph">747live7.com.ph</a></li>
+                    </ul>
+                </div>
+                <!-- Recent Projects -->
+                <div>
+                    <ul>
+                        <h3>In Progress</h3>
+                        <li><a href="garagedoorchamps.com">garagedoorchamps.com</a></li>
+                        <li><a href="unitedductcleaning.com">unitedductcleaning.com</a></li>
+                        <li><a href="santachimneyservices.com">santachimneyservices.com</a></li>
+                        <li><a href="747live7.com.ph">747live7.com.ph</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <ul>
+                        <h3>Contact Me</h3>
+                        <li><a href=""><i class="fa-solid fa-envelope fa-2x icon-size"></i>fazeelqasim2112@gmail.com</a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-phone fa-2x icon-size"></i>923495480991</a>
+                        </li>
+                        <li><a href=""><i class="fa-solid fa-location-dot fa-2x icon-size"></i>District
+                                Attock, Tehsil Jand P/O Makhad</a></li>
+                    </ul>
+                </div>
+                <!-- Social Icons -->
+                <div>
+                    <ul>
+                        <h3>Follow</h3>
+                        <li><a href=""><i class="fa-brands fa-square-facebook fa-2x icon-size"></i>Facebook</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-linkedin fa-2x icon-size"></i>LinkedIn</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-square-instagram fa-2x icon-size"></i>Instagram</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-square-whatsapp fa-2x icon-size"></i>Whatsapp</a>
+                        </li>
+                        <li><a href=""><i class="fa-brands fa-square-youtube fa-2x icon-size"></i>YouTube</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- Best Projects -->
-            <div>
-                <ul>
-                    <h3>Top Projects</h3>
-                    <li><a href="holaplays.com.ph">holaplays.com.ph</a></li>
-                    <li><a href="gohawkplay.com.ph">gohawkplay.com.ph</a></li>
-                    <li><a href="747live7.com.ph">747live7.com.ph</a></li>
-                </ul>
-            </div>
-            <!-- Recent Projects -->
-            <div>
-                <ul>
-                    <h3>In Progress</h3>
-                    <li><a href="garagedoorchamps.com">garagedoorchamps.com</a></li>
-                    <li><a href="unitedductcleaning.com">unitedductcleaning.com</a></li>
-                    <li><a href="santachimneyservices.com">santachimneyservices.com</a></li>
-                    <li><a href="747live7.com.ph">747live7.com.ph</a></li>
-                </ul>
-            </div>
-            <!-- Contact Info -->
-            <div>
-                <ul>
-                    <h3>Contact Me</h3>
-                    <li><a href=""><i class="fa-solid fa-envelope fa-2x icon-size"></i>fazeelqasim2112@gmail.com</a>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-phone fa-2x icon-size"></i>923495480991</a>
-                    </li>
-                    <li><a href=""><i class="fa-solid fa-location-dot fa-2x icon-size"></i>District
-                            Attock, Tehsil Jand P/O Makhad</a></li>
-                </ul>
-            </div>
-            <!-- Social Icons -->
-            <div>
-                <ul>
-                    <h3>Follow</h3>
-                    <li><a href=""><i class="fa-brands fa-square-facebook fa-2x icon-size"></i>Facebook</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-linkedin fa-2x icon-size"></i>LinkedIn</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-square-instagram fa-2x icon-size"></i>Instagram</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-square-whatsapp fa-2x icon-size"></i>Whatsapp</a>
-                    </li>
-                    <li><a href=""><i class="fa-brands fa-square-youtube fa-2x icon-size"></i>YouTube</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
