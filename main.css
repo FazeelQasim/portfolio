@@ -11,7 +11,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--primary);
+    /* background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to left, #c94b4b, #4b134f); 
+    background: linear-gradient(to left, #0f0c29, #302b63, #08080c);  */
+    
+    background: linear-gradient(109.6deg, rgb(2, 2, 2) 32.4%, #1e0038 98.8%), rgb(2, 2, 2) 32.4%;
 }
 
 
@@ -106,7 +110,6 @@ h1 {
         inset -4px -4px 6px 0 rgba(255, 255, 255, 1),
         inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
 }
-
 
 
 
@@ -447,11 +450,8 @@ h1 {
 
 /* For Typing Effect */
 .typewriter {
-    font-family: 'poppins', Courier, monospace;
-    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
     color: #fff;
-    /* background-color: #333; */
-    padding: 20px;
     display: inline-block;
 }
 
@@ -466,7 +466,9 @@ h1 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 10px 0 200px 0;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
 }
 
 
@@ -474,9 +476,11 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background: linear-gradient(to left, #0f0c29, #302b63, #08080c);
+    gap: 100px;
+    box-shadow: 0 0 200px black inset;
     flex-wrap: wrap;
-    padding: 200px 100px 0 100px;
+    padding: 150px 3% 100px 3%;
 }
 
 
@@ -632,6 +636,33 @@ h1 {
     }
 }
 
+.hero-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+.hero-icons i {
+    color: #fff352;
+}
+
+.hero-icons a:hover {
+    color: #fff352;
+}
+
+.hero-icons a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
 
 
 .icons {
@@ -748,6 +779,7 @@ h1 {
     max-width: 800px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .about-image img {
@@ -821,6 +853,7 @@ h1 {
 .portfolio {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .portfolio-main {
@@ -829,14 +862,12 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 90%;
-    background-color: black;
-    padding: 30px;
-    border-radius: 50px;
+    width: 100%;
 }
 
 .website {
     background-color: #000;
+    border: 1px solid #fff352;
     display: flex;
     flex-direction: column;
     width: 380px;
@@ -891,6 +922,8 @@ h1 {
 .skills {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skills-main {
@@ -898,49 +931,40 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    width: 85%;
-    background-color: black;
+    gap: 40px;
+    width: 100%;
     padding: 50px;
-    border-radius: 50px;
 }
 
 .skill {
-    background-color: #000;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 230px;
-    height: auto;
-    padding: 40px;
-    border: 1px solid gainsboro;
-    border-radius: 40%;
-    color: white;
-}
-
-.skills-images {
-    height: 100px;
-    width: 100px;
-    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: #1a1a1a;
-    border-radius: 50%;
+    gap: 30px;
+    font-weight: bold;
+    border: 1px solid #0c0c0b;
+    padding: 2%;
+    border-radius: 15%;
+    box-shadow: 0 0 10px #fff352 inset;
 }
 
-.skill h3 {
-    color: #fff352;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: bolder;
+
+.skill img {
+    border-radius: 50%;
+    width: 180px;
+    height: auto;
 }
 
 .skill-name {
+    color: #fff352;
+    font-size: 1.5rem;
+    background-color: #121212;
+    width: 80%;
     text-align: center;
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: lightgray;
+    padding: 7%;
+    border-radius: 10%;
+    height: auto;
 }
 
 
@@ -968,6 +992,12 @@ h1 {
     gap: 40px;
     margin: 1%;
 }
+/* .modal-img img{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 300px;
+} */
 
 .myImages:hover {
     opacity: 0.7;
@@ -1035,7 +1065,7 @@ h1 {
 }
 
 /* The Close Button */
-.close {
+.modal-close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -1045,8 +1075,8 @@ h1 {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -1127,8 +1157,8 @@ h1 {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    width: 50%;
-    top: 20%;
+    width: 70%;
+    top: 150px;
     text-align: left;
 }
 
@@ -1257,7 +1287,8 @@ h1 {
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 

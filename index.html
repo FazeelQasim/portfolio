@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Fazeel Qasim</title>
+    <title>Fazeel Qasim | My-Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation|3d'>
-    <link href='https://fonts.googleapis.com/css?family=Protest Guerrilla' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/9c848326b3.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
@@ -17,7 +16,7 @@
 
     <!-- This is New Header -->
     <header class="styled-header">
-        <div class="logo"><a href="index.html"><img src="images/logosmall.png" alt=""></a></div>
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
         <nav class="nav-links">
             <ul class="menu">
                 <li><a href="#about">About Us</a></li>
@@ -43,18 +42,32 @@
     <div class="hero">
         <div class="hero-main">
             <div class="hero-text">
-                <h1 class="heading">Fazeel Qasim</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione voluptas consequuntur ipsa
-                    repellat quidem similique enim ad! Ex consequatur quisquam id, culpa aliquid earum quos? Iusto,
-                    voluptas
-                    dolorem! Modi.</p>
-                <a href="" download="fazeelqasim-cv.pdf">
-                    <button class="custom-btn neon-btn">Resume
-                        <i class="fa-solid fa-download fa-2x" style="vertical-align: middle;"></i>
-                    </button>
-                </a>
+                <h1 class="heading typewriter">
+                    <span id="text"></span>
+                </h1>
+                <p>I'm Fazeel Qasim, a skilled front-end and WordPress developer dedicated to turning creative ideas
+                    into functional, high-performing websites. From seamless user interfaces to fully customized
+                    WordPress solutions, I build with a focus on performance, accessibility, and responsiveness.</p>
+                <strong style="color: #fff352;">Let's Build Something Amazing Together!</strong>
+                <div>
+                    <a href="https://wa.me/+923495480991" target="_blank">
+                        <button class="custom-btn neon-btn" href="">
+                            <i class="fa-solid fa-phone fa-2x" style="vertical-align: middle;"></i>&nbsp;Contact Me
+                        </button>
+                    </a>
+                    <a href="#portfolio">
+                        <button class="custom-btn neon-btn" href="">
+                            <i class="fa-solid fa-globe fa-2x" style="vertical-align: middle;"></i>&nbsp;Portfolio
+                        </button>
+                    </a>
+                </div>
             </div>
-            <div class="main-hologram"
+            <div style="display: flex;">
+                <div class="img" style="display: flex; align-items: center; justify-content: center; ">
+                    <img src="images/portfolio.png" alt=""
+                        style="width: 100%; height: 400px; max-width: 450px; min-width: 300px; border-radius: 50%; box-shadow: 0 0 10px #000, 0 0 10px #fff352 inset;">
+                </div>
+                <!-- <div class="main-hologram"
                 style="display: flex; align-items: center; justify-content: center; width: 80vw; height: 70vh; max-width: 600px;">
 
                 <div class="hero-cube">
@@ -74,6 +87,21 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+                <div class="hero-icons" style="display: flex; position: relative;">
+                    <a href=""><i class="fa-brands fa-facebook fa-2x circular-icons"
+                            style="position: absolute; right: 55px;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-2x circular-icons"
+                            style="position: absolute; right: 30px;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-2x circular-icons"
+                            style="position: absolute; right: 17px;"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube fa-2x circular-icons"
+                            style="position: absolute; right: 17px;"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp fa-2x circular-icons"
+                            style="position: absolute; right: 30px;"></i></a>
+                    <a href=""><i class="fa-brands fa-dribbble fa-2x circular-icons"
+                            style="position: absolute; right: 60px;"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -85,7 +113,7 @@
     <!-- Divider About Us-->
     <div class="stylish-divider" id="about">
         <div class="divider-decor left-decor"></div>
-        <i class="fa-solid fa-users">About Us</i>
+        <i class="fa-solid fa-users">About</i>
         <div class="divider-decor right-decor"></div>
     </div>
 
@@ -94,23 +122,41 @@
 
     <!-- For New About Us -->
 
-    <div class="about" style="color: white;">
-        <div class="about-main">
+    <div class="about"
+        style="color: white; display: flex; flex-direction: column; text-align: center; align-items: center; justify-content: center;">
+        <div style="width: 80%;"">
+            <p>I'm Fazeel Qasim, a web developer with expertise in HTML, CSS, JavaScript, Bootstrap,
+                and WordPress. With about 2 years of experience in both WordPress and front-end development, I
+                specialize in building responsive, modern websites that are optimized for performance and user
+                experience.
+            </p>
+            <br>
+            <p>In addition to my development skills, I have hands-on experience in on-page SEO,
+                ensuring that the websites I build are not only visually appealing but also rank well on search engines.
+                As a freelancer, I have worked with clients to deliver customized solutions that align with their
+                business goals, offering flexibility and creativity in every project.
+            </p>
+            <br>
+            <p>
+                Whether you're looking for a fully customized WordPress site or a responsive front-end interface, I'm here to bring your ideas to life.
+            </p>
+        </div>
+        <div class=" about-main">
             <div class="about-image">
                 <img src="images/about.png" alt="About Me">
             </div>
             <div class="about-box">
-                <h3>About Me</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit dignissimos neque, quod quibusdam
-                    temporibus facilis, nulla doloribus, atque consequuntur velit totam modi quae sapiente repudiandae
-                    voluptatum amet soluta ipsam. Neque ad vel, corporis cumque officia, repudiandae adipisci odit fugit
-                    debitis facere, fugiat suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
-                    officiis, corporis similique iure, adipisci quaerat aut laboriosam animi deserunt odit ratione non
-                    suscipit odio porro perspiciatis aspernatur nostrum numquam blanditiis. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Repellat veritatis quidem aut corrupti vero cum quibusdam vel eveniet,
-                    corporis odio, consequatur sunt atque, dignissimos maiores repudiandae dicta perferendis? Unde,
-                    deleniti?
-                </p>
+                <h3 class="heading">About Me</h3>
+                <strong style="color: #fff352; font-size: 25px;">Passionate Developer with 2 Years of
+                    Experience</strong>
+                <p>I'm Fazeel Qasim, a front-end and WordPress developer with 2 years of hands-on experience building
+                    visually appealing and user-friendly websites. I specialize in crafting responsive designs that
+                    provide seamless experiences across devices. From WordPress sites to interactive front-end
+                    solutions, I bring creativity and technical expertise to every project.</p>
+                <p>Over the years, I've honed my skills in HTML, CSS, JavaScript, Bootstrap, and WordPress, working
+                    closely with clients to deliver high-quality websites that meet their unique needs. Whether it's a
+                    simple business website or a complex e-commerce platform, my goal is to create solutions that are
+                    not only functional but also fast, secure, and scalable.</p>
             </div>
 
             <!-- Flip Card section of About Us-->
@@ -185,67 +231,86 @@
     <!-- Portfolio Section -->
 
     <div class="portfolio">
-        <div class="portfolio-main" style="background-image: url(images/darkbackground.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+        <div
+            style="display: flex; gap: 50px; width: 80%; flex-direction: column; align-items: center; justify-content: center; color: white;">
+            <h3 class="heading">Explore My Work</h3>
+            <p>Over the past two years, I've had the opportunity to work on a range of projects, from WordPress sites to
+                responsive front-end designs. Below are some of the projects I've developed, each highlighting my
+                expertise in HTML, CSS, JavaScript, Bootstrap, and WordPress. Every project is built with a focus on
+                functionality, design, and user experience.</p>
+
+            <div class="portfolio-main">
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/holaplay.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>HolaPlay</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;19 August, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
-            </div>
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/gohawkplay.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>Go HawkPlay</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;3 September, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
-            </div>
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/747live7.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>747live7</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
-            </div>
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+                <!-- 
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/holaplay.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>Site Name</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
-            </div>
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/holaplay.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>Site Name</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
-            </div>
-            <div class="website">
-                <div class="site-images">
-                    <img src="images/holaplay.PNG" alt="">
+                <div class="website">
+                    <div class="site-images">
+                        <img src="images/holaplay.PNG" alt="">
+                    </div>
+                    <a href="">
+                        <h3>Site Name</h3>
+                    </a>
+                    <p class="date">Completed on: &nbsp;25 August, 2024</p>
+                    <p class="price">Project Price: &nbsp;10k Pkr</p>
                 </div>
-                <a href="">
-                    <h3>Site Name</h3>
-                </a>
-                <p class="date">Completed on: &nbsp;25 August, 2024</p>
-                <p class="price">Project Price: &nbsp;10k Pkr</p>
+                 -->
             </div>
+            <h3 class="heading">Want to see more?</h3>
+            <strong style="color: #fff352;">Check out my full portfolio to explore additional projects and learn how I
+                can bring value to your next web development project.</strong>
+            <a href="#portfolio">
+                <button class="custom-btn neon-btn" href="">
+                    <i class="fa-solid fa-globe fa-2x" style="vertical-align: middle;"></i>&nbsp;Portfolio
+                </button>
+            </a>
         </div>
     </div>
 
@@ -260,38 +325,85 @@
 
     <!-- Skills Section For testing -->
 
+
+
+
+
     <div class="skills">
-        <div class="skills-main">
-            <div class="skill">
-                <div class="skills-images">
-                    <i class="fa-brands fa-html5 fa-3x"></i>
+        <div
+            style="display: flex; gap: 50px; width: 80%; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: justify;">
+            <h3 class="heading">
+                My Skills
+            </h3>
+            <p>
+                I've developed a diverse set of skills that allow me to create high-quality websites and digital
+                solutions. Below are some of the core skills I bring to every project:
+            </p>
+            <div style="display: flex; gap: 50px; flex-wrap: wrap;">
+                <div class="skil1" style="display: flex; flex-direction: column; min-width: 40%; flex: 1;">
+                    <p>
+                        <strong style="color: #fff352;">HTML & CSS: </strong>Crafting clean, modern, and responsive web layouts that ensure smooth user experiences across all devices.
+                    </p>
+                    <p>
+                        <strong style="color: #fff352;">JavaScript: </strong>Building dynamic and interactive features to enhance website functionality and user engagement.
+                    </p>
+                    <p>
+                        <strong style="color: #fff352;">Bootstrap: </strong>Utilizing this powerful framework to design responsive, mobile-first websites with speed and efficiency.
+                    </p>
                 </div>
-                <h3>87%</h3>
-                <p class="skill-name">Skill Name</p>
-            </div>
-            <div class="skill">
-                <div class="skills-images">
-                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <div class="skil2" style="display: flex; flex-direction: column; min-width: 40%; flex: 1;">
+                    <p>
+                        <strong style="color: #fff352;">WordPress Development: </strong>Developing WordPress sites and On-page SEO, along with optimizing websites for performance, security, and scalability.
+                    </p>
+                    <p>
+                        <strong style="color: #fff352;">On-Page SEO: </strong>Implementing SEO best practices to ensure that websites rank well in search engines and attract organic traffic.
+                    </p>
+                    <p>
+                        <strong style="color: #fff352;">Git & GitHub: </strong>Version control management for efficient collaboration and streamlined development workflows.
+                    </p>
                 </div>
-                <h3>95%</h3>
-                <p class="skill-name">Skill Name</p>
-            </div>
-            <div class="skill">
-                <div class="skills-images">
-                    <i class="fa-brands fa-wordpress fa-3x"></i>
-                </div>
-                <h3>75%</h3>
-                <p class="skill-name">Skill Name</p>
-            </div>
-            <div class="skill">
-                <div class="skills-images">
-                    <i class="fa-brands fa-php fa-3x"></i>
-                </div>
-                <h3>89%</h3>
-                <p class="skill-name">Skill Name</p>
             </div>
         </div>
+
+        <div class="skills-main">
+            <div class="skill">
+                <img src="images/85_.png" alt="">
+                <h3 class="skill-name">HTML</h3>
+            </div>
+            <div class="skill">
+                <img src="images/85_.png" alt="">
+                <h3 class="skill-name">CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="images/85_.png" alt="">
+                <h3 class="skill-name">JavaScript</h3>
+            </div>
+            <div class="skill">
+                <img src="images/85_.png" alt="">
+                <h3 class="skill-name">Bootstrap</h3>
+            </div>
+            <div class="skill">
+                <img src="images/85_.png" alt="">
+                <h3 class="skill-name">WordPress</h3>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px; width: 80%; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center;">
+            <strong style="color: #fff352;">Ready to put these skills to work?</strong>
+            <p>
+                I'm always open to new opportunities and challenges. Let’s discuss how I can contribute to your next project!
+            </p>
+            <a href="https://wa.me/+923495480991" target="_blank">
+                <button class="custom-btn neon-btn" href="">
+                    <i class="fa-solid fa-phone fa-2x" style="vertical-align: middle;"></i>&nbsp;Contact Me
+                </button>
+            </a>
+        </div>
     </div>
+
+
+
+
+
 
 
 
@@ -308,7 +420,7 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <!-- The Close Button -->
-        <span class="close">&times;</span>
+        <span class="modal-close">&times;</span>
         <!-- Modal Content (The Image) -->
         <img class="modal-content" id="img01">
         <!-- Modal Caption (Image Text) -->
@@ -326,13 +438,18 @@
             <div class="skills-heading">
                 <h4 class="heading-text">Graphic Designing</h4>
             </div>
-            <div style="background-color: black; margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
+            <div
+                style="display: flex; flex-wrap: wrap;  background-color: black; margin-top: 100px; padding-top: 100px; padding-bottom: 100px;">
                 <!-- Trigger the Modal -->
-                <div class="modal-img" style="color: white;">
-                    <img class="myImages" src="images/gohawkplay.PNG" alt="Project 1">
-                    <img class="myImages" src="images/portfolio.png" alt="Project 2">
-                    <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
-                    <img class="myImages" src="images/digicourses.PNG" alt="Project 3">
+                <div class="modal-img" style="color: white; display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;">
+                    <img class="myImages" src="images/education.png" alt="Education">
+                    <img class="myImages" src="images/academic-world.jpg" alt="Academic World">
+                    <img class="myImages" src="images/toon-bakers.png" alt="Toon Bakers">
+                    <img class="myImages" src="images/success.jpg" alt="Success">
+                    <img class="myImages" src="images/chocolate-shop.png" alt="Chocolate Shop">
+                    <img class="myImages" src="images/fazeel-qasim.jpg" alt="Logo">
+                    <img class="myImages" src="images/cooking.png" alt="Cooking">
+                    <img class="myImages" src="images/design.png" alt="Design">
                 </div>
             </div>
         </div>

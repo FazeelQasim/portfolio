@@ -38,7 +38,7 @@ for (let i = 0; i < images.length; i++) {
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("modal-close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -49,7 +49,7 @@ span.onclick = function () {
 
 
 // For Typing Effect
-const texts = ["WordPress Developer", "Front-End Developer", "Backend-Developer"];
+const texts = ["WordPress Developer", "Front-End Developer"];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -57,7 +57,7 @@ let letter = '';
 let isDeleting = false;
 
 (function type() {
-    const prefix = 'I am a '; // Fixed text
+    const prefix = 'Fazeel Qasim | '; // Fixed text
     document.getElementById('text').textContent = prefix + letter;
     
     if (!isDeleting && index < texts[count].length) {
@@ -106,3 +106,4 @@ function openLightbox(index) {
 function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
 }
+
