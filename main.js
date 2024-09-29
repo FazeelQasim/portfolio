@@ -86,15 +86,20 @@ let isDeleting = false;
 const articles = [
   {
       title: 'Article Title 1',
-      content: `<h2>Article 1</h2><p>This is the content of Article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>`
+      content: `<h2>A Comprehensive Guide To Exploring the Thrills of Online Slot Gaming
+</h2><p>This is the content of Article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>`
   },
   {
       title: 'Article Title 2',
-      content: `<h2>Article 2</h2><p>This is the content of Article 2. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>`
+      content: `<h2>Uncovering the Best SEO Tools for Beginners in the Digital World</h2><p>This is the content of Article 2. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>`
   },
   {
       title: 'Article Title 3',
-      content: `<h2>Article 3</h2><p>This is the content of Article 3. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>`
+      content: `<h2>Top 10 best home decor stores in Little Rock, Arkansas</h2><p>This is the content of Article 3. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>`
+  },
+  {
+    title: 'Article Title 4',
+    content: `<h2>The Key Summer 2024 Trends, Influences, And Directions To Know</h2><p> lorem lasjkdf laskdj f sdlfks df sd f</p>`
   }
 ];
 
