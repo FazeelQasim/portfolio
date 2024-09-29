@@ -11,12 +11,57 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    /* background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-    background: linear-gradient(to left, #c94b4b, #4b134f); 
-    background: linear-gradient(to left, #0f0c29, #302b63, #08080c);  */
-    
     background: linear-gradient(109.6deg, rgb(2, 2, 2) 32.4%, #1e0038 98.8%), rgb(2, 2, 2) 32.4%;
 }
+
+
+
+
+/* Animation */
+/* Initial state for all elements */
+.slide-up, .slide-left, .slide-right, .fade-in, .fade-in-up, .fade-in-down {
+    opacity: 0;
+    transition: all 4s ease;
+  }
+  
+  .slide-up {
+    transform: translateY(100px);
+  }
+  
+  .slide-left {
+    /* opacity: 0; */
+    transform: translateX(-100%); /* Start the element off the left side of the screen */
+    /* transition: all 3s ease; */
+  }
+
+  .slide-right {
+    /* opacity: 0; */
+    transform: translateX(100px); /* Start the element off the right side of the screen */
+    /* transition: all 3s ease; */
+  }
+
+  .fade-in {
+    transform: translateY(0);
+  }
+  
+  .fade-in-up {
+    transform: translateY(100px); /* Moves up by 100px before coming to view */
+  }
+
+  .fade-in-down {
+    /* opacity: 0; */
+    transform: translateY(-50px); /* Start above the screen */
+    /* transition: all 1s ease; */
+  }
+  
+  /* When in view (active) */
+  .active {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+
+
 
 
 
@@ -888,7 +933,7 @@ h1 {
 .site-images img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .website a {

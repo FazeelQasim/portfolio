@@ -112,3 +112,19 @@ function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
 }
 
+// For animation (When div comes into view as the user scrolls)
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.slide-up, .slide-left, .fade-in, .fade-in-up, .slide-right, .fade-in-down');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      }
+    });
+  });
+
+  elements.forEach(el => observer.observe(el));
+});
